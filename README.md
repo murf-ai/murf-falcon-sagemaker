@@ -1,6 +1,6 @@
-# Murf Falcon Text-to-Speech on Amazon SageMaker
+# Murf Falcon 2.1 Text-to-Speech on Amazon SageMaker
 
-Murf Falcon is a low-latency text-to-speech model for voice agents, IVR and
+Murf Falcon 2.1 is a low-latency text-to-speech model for voice agents, IVR and
 narration: 141 voices in 42 locales, first audio in about 50 ms when streaming.
 It is sold on AWS Marketplace as a SageMaker model package and runs entirely
 inside your AWS account with network isolation, so text and audio never leave
@@ -37,14 +37,14 @@ About 15 minutes, most of it waiting for the endpoint to start.
 
 ### 2. Subscribe and copy the model package ARN
 
-1. Open the [Murf Falcon listing](https://aws.amazon.com/marketplace/search/results?searchTerms=Murf+Falcon)
+1. Open the [Murf Falcon 2.1 listing](https://aws.amazon.com/marketplace/search/results?searchTerms=Murf+Falcon)
    and choose **Continue to subscribe**.
 2. Review pricing, EULA and support terms, then choose **Accept offer**.
 3. Choose **Continue to configuration**, pick your **Region** and copy the
    **Product ARN**. It is different in every Region.
 
 Already subscribed? Go to AWS Marketplace → **Manage subscriptions**, open Murf
-Falcon, choose **Configure** (or **Launch new instance**), select **AWS CLI** and
+Falcon 2.1, choose **Configure** (or **Launch new instance**), select **AWS CLI** and
 your Region, and copy the ARN.
 
 ### 3. Deploy an endpoint
@@ -82,7 +82,7 @@ import base64, json
 
 runtime = boto3.client("sagemaker-runtime", region_name=region)
 resp = runtime.invoke_endpoint(EndpointName=name, ContentType="application/json", Body=json.dumps({
-    "text": "Hello from Murf Falcon on Amazon SageMaker.",
+    "text": "Hello from Murf Falcon 2.1 on Amazon SageMaker.",
     "voice_id": "en-US-natalie",
     "format": "wav",
 }))
@@ -253,7 +253,7 @@ from a client in the same Region:
 | 10 | 60 ms |
 | 32 | 84 ms |
 
-Intelligibility: 1.0-1.4% word error rate when Falcon's English output for ten
+Intelligibility: 1.0-1.4% word error rate when Falcon 2.1's English output for ten
 passages is transcribed by a speech recognizer, across three voices.
 
 ## Troubleshooting

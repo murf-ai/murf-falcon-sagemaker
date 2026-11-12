@@ -1,4 +1,4 @@
-"""Call a Murf Falcon SageMaker endpoint in each of its three modes.
+"""Call a Murf Falcon 2.1 SageMaker endpoint in each of its three modes.
 
     python examples/invoke.py <endpoint> realtime  --text "Hello there." --out hello.wav
     python examples/invoke.py <endpoint> stream    --text "Hello there." --out hello.mp3
@@ -127,7 +127,7 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("endpoint")
     ap.add_argument("mode", choices=["realtime", "stream", "bidi"])
-    ap.add_argument("--text", default="Hello from Murf Falcon on Amazon SageMaker. Streaming starts right away.")
+    ap.add_argument("--text", default="Hello from Murf Falcon 2.1 on Amazon SageMaker. Streaming starts right away.")
     ap.add_argument("--voice", default="en-US-natalie")
     ap.add_argument("--locale", help="language to speak, from the voice's supported_locales")
     ap.add_argument("--style", help="speaking style for that locale")
