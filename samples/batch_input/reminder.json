@@ -1,0 +1,6 @@
+{
+ "text": "This is a reminder that your appointment is tomorrow at ten AM.",
+ "voice_id": "en-US-natalie",
+ "format": "mp3",
+ "response_format": "binary"
+}

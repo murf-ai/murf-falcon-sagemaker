@@ -1,0 +1,6 @@
+{
+ "text": "Streaming lets a voice agent start speaking right away.",
+ "voice_id": "en-US-natalie",
+ "format": "mp3",
+ "stream": true
+}
