@@ -1,0 +1,22 @@
+{
+ "request_id": "6f1c2b9e-0d4a-4c1e-9a37-2b8e5f0c7d11",
+ "audio": "<base64-encoded WAV, truncated>",
+ "content_type": "audio/wav",
+ "sample_rate": 24000,
+ "duration_s": 2.84,
+ "usage": {
+  "characters": 43
+ },
+ "words": [
+  {
+   "word": "Hello",
+   "start": 0.08,
+   "end": 0.41
+  },
+  {
+   "word": "from",
+   "start": 0.41,
+   "end": 0.62
+  }
+ ]
+}
